@@ -31,37 +31,22 @@
         </license>
     </licenses>
 
-    <mailingLists>
-        <mailingList>
-            <archive>http://groups.google.com/group/littleproxy</archive>
-            <name>littleproxy</name>
-            <post>littleproxy@googlegroups.com</post>
-            <subscribe>http://groups.google.com/group/littleproxy</subscribe>
-            <unsubscribe>littleproxy+unsubscribe@googlegroups.com</unsubscribe>
-        </mailingList>
-    </mailingLists>
-
-    <issueManagement>
-        <system>github</system>
-        <url>https://github.com/adamfisk/LittleProxy/issues</url>
-    </issueManagement>
-
     <scm>
-        <connection>scm:git:https://adamfisk@github.com/adamfisk/LittleProxy.git</connection>
-        <developerConnection>scm:git:git@github.com:adamfisk/LittleProxy</developerConnection>
-        <url>scm:git:git@github.com:adamfisk/LittleProxy.git</url>
+        <connection>scm:git:git@github.com:wrightkris/LittleProxy.git</connection>
+        <developerConnection>scm:git:git@github.com:wrightkris/LittleProxy.git</developerConnection>
+        <url>https://github.com/wrightkris/LittleProxy</url>
         <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>dev-nexus</id>
+            <url>http://localhost:1234/repository/maven-snapshots</url>
         </snapshotRepository>
 
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>dev-nexus</id>
+            <url>http://localhost:1234/repository/maven-releases</url>
         </repository>
     </distributionManagement>
 
